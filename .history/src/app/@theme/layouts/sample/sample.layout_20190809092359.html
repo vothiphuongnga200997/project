@@ -1,0 +1,27 @@
+<nb-layout [center]="layout.id === 'center-column'" windowMode>
+    <nb-layout-header fixed>
+        <ngx-header [position]="sidebar.id === 'start' ? 'normal' : 'inverse'"></ngx-header>
+    </nb-layout-header>
+
+    <nb-sidebar class="menu-sidebar" tag="menu-sidebar" responsive state="compacted" [end]="sidebar.id === 'end'">
+        <div class="over">
+            <nb-sidebar-header *ngIf="currentTheme !== 'corporate'">
+                <a href="#">
+                    <button class="btn btn-hero-info main-btn quickstart">
+                        <img class="sidebar-icon" src="../../../../assets/images/rpa-lab.png" />
+                        <span>RPA LAB</span>
+                    </button>
+                </a>
+            </nb-sidebar-header>
+            <ng-content select="nb-menu"></ng-content>
+        </div>
+    </nb-sidebar>
+    <nb-layout-column class="main-content">
+        <ng-content select="router-outlet"></ng-content>
+    </nb-layout-column>
+    <nb-layout-footer>
+        <ngx-footer></ngx-footer>
+    </nb-layout-footer>
+    <nb-sidebar class="settings-sidebar" tag="settings-sidebar" state="collapsed" fixed [end]="sidebar.id !== 'end'"> </nb-sidebar>
+</nb-layout>
+<dialog-cmp #confirmDeleteDialog [config]="dialogConfig" (rightBtnEventEmitter)="onDelete($event)"></dialog-cmp>

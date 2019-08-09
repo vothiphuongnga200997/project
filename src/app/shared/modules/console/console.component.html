@@ -1,0 +1,28 @@
+<div class="cmd-content bg-white text-dark text-sm-left" #divScroll>
+    <p *ngIf="!listLogConsole.length">{{ cmdContent }}</p>
+    <div *ngFor="let log of listLogConsole; let i = index; trackBy: trackByFn" [class]="'log-info-layout-child-' + log.childLayout">
+        <div class="log-info">
+            <div class="level-label">
+                    {{ log.level }}
+            </div>
+        </div>
+        <div class="d-flex flex-row log-info">
+            <p class="title-string" *ngIf="log.startTime && log.endTime">Start / End </p>
+            <p class="timestamp-label" *ngIf="log.startTime && log.endTime"> {{ formatDate(log.startTime) }} </p>
+            <p class="title-string" *ngIf="log.startTime && log.endTime">/</p>
+            <p class="timestamp-label" *ngIf="log.startTime && log.endTime"> {{ formatDate(log.endTime) }}</p>
+            <p class="title-string" *ngIf="log.startTime && !log.endTime">Start </p><p class="timestamp-label" *ngIf="log.startTime && !log.endTime">{{ formatDate(log.startTime) }}</p>
+        </div>
+        <div class="d-flex flex-row log-info">
+            <p class="timestamp-label" *ngIf="log.timeStamp">[ {{ formatDate(log.timeStamp) }} ]</p>
+            <p class="message-label" *ngIf="log.message">{{ log.message }}</p>      
+        </div>
+        <div class="log-info">
+            <p [class]="log.status=== 'PASS'  ? 'status-label-pass' : 'status-label-fail'" *ngIf="log.status">{{ log.status }}</p>      
+        </div>
+        <div class="log-info">
+            <p class="message-label" *ngIf="log.close">=-=-=-=-=-=-=-=-=-=-=-= Complete =-=-=-=-=-=-=-=-=-=-=-=-</p>      
+        </div>
+    </div>
+   
+</div>

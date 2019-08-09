@@ -1,0 +1,59 @@
+.cmd-content {
+    // height: calc(23vh - 0px);
+    white-space: pre-line;
+    overflow-y: scroll;
+    padding: 1rem;
+    
+}
+.cmd-content::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    // background: rgba(255,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.log-info-layout-child-0 {
+    margin-bottom: 1rem;
+    margin-left: 0;
+}
+.log-info-layout-child-1 {
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+.log-info-layout-child-2 {
+    margin-bottom: 1rem;
+    margin-left: 4rem;
+}
+.log-info-layout-child-3 {
+    margin-bottom: 1rem;
+    margin-left: 6rem;
+}
+.log-info {
+    .level-label {
+        color: #68217a;
+        margin-right: 2rem;
+        margin-bottom: 0;
+        text-transform: capitalize;
+    }
+    .title-string {
+        margin-right: 1rem;
+        margin-bottom: 0;
+    }
+    .timestamp-label {
+        color: #ffa500;
+        margin-right: 1rem;
+        margin-bottom: 0;
+    }
+    .message-label {
+        color: #808080;
+        margin-bottom: 0;
+    }
+
+    .status-label-pass {
+        color: #008800;
+    }
+
+    .status-label-fail {
+        color: red;
+    }
+}

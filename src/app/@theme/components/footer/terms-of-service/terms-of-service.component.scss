@@ -1,0 +1,27 @@
+@import '../../../../@theme/styles/themes';
+
+@include nb-install-component() {
+    nb-card {
+        max-width: 900px;
+        max-height: 650px;
+    }
+}
+
+.content {
+    height: 600px;
+}
+
+.heading2 {
+    color: #ff6600;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.line a {
+    color: #0088cc;
+}
+.line a:hover {
+    color: #08284d;
+    cursor: pointer;
+}

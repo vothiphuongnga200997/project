@@ -1,0 +1,50 @@
+<div class="container-fluid">
+    <nb-card>
+        <nb-card-header>
+            Robots
+        </nb-card-header>
+        <nb-tabset fullWidth>
+            <nb-tab [tabTitle]="'Connected (' + robotsNumber.connectedNumber + ')'">
+                <nb-card>
+                    <nb-card-body>
+                        <ng2-smart-table #connectedTable [settings]="settings" [source]="connectedSource"
+                            (editConfirm)="editRobot($event)" (deleteConfirm)="showDeleteConfirm($event)">
+                        </ng2-smart-table>
+                    </nb-card-body>
+                </nb-card>
+            </nb-tab>
+            <nb-tab [tabTitle]="'Disconnected (' + robotsNumber.disconnectedNumber + ')'">
+                <nb-card>
+                    <nb-card-body>
+                        <ng2-smart-table #disconnectedTable [settings]="settings" [source]="disconnectedSource"
+                            (editConfirm)="editRobot($event)" (deleteConfirm)="showDeleteConfirm($event)">
+                        </ng2-smart-table>
+                    </nb-card-body>
+                </nb-card>
+            </nb-tab>
+            <nb-tab [tabTitle]="'Disabled (' + robotsNumber.disabledNumber + ')'">
+                <nb-card>
+                    <nb-card-body>
+                        <ng2-smart-table #disabledTable [settings]="settings" [source]="disabledSource"
+                            (editConfirm)="editRobot($event)" (deleteConfirm)="showDeleteConfirm($event)">
+                        </ng2-smart-table>
+                    </nb-card-body>
+                </nb-card>
+            </nb-tab>
+            <nb-tab [tabTitle]="'Unauthorized (' + robotsNumber.unauthorizedNumber + ')'">
+                <nb-card>
+                    <nb-card-body>
+                        <ng2-smart-table #unauthorizedTable [settings]="settings" [source]="unauthorizeSource"
+                            (editConfirm)="editRobot($event)" (deleteConfirm)="showDeleteConfirm($event)">
+                        </ng2-smart-table>
+                    </nb-card-body>
+                </nb-card>
+            </nb-tab>
+            <nb-tab tabTitle="Resource Pool">
+                <!--  -->
+            </nb-tab>
+        </nb-tabset>
+    </nb-card>
+</div>
+
+<dialog-cmp #confirmDeleteDialog [config]="dialogConfig" (rightBtnEventEmitter)="onDelete($event)"></dialog-cmp>

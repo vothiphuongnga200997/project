@@ -6,10 +6,9 @@ import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
     { path: 'pages', loadChildren: 'app/pages/pages.module#PagesModule' },
-    { path: '', redirectTo: 'pages', pathMatch: 'full' },
     { path: 'login', component: LoginComponent },
-    // { path: '**', redirectTo: 'pages' },
     { path: 'home', component: HomeComponent },
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
 const config: ExtraOptions = {

@@ -1,133 +1,134 @@
 @font-face {
-    font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?fh0rbu');
-    src: url('../fonts/icomoon.eot?fh0rbu#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?fh0rbu') format('truetype'),
-        url('../fonts/icomoon.woff?fh0rbu') format('woff'), url('../fonts/icomoon.svg?fh0rbu#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?fh0rbu');
+  src:  url('../fonts/icomoon.eot?fh0rbu#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?fh0rbu') format('truetype'),
+    url('../fonts/icomoon.woff?fh0rbu') format('woff'),
+    url('../fonts/icomoon.svg?fh0rbu#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-[class^='icon-'],
-[class*=' icon-'] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-wallet:before {
-    content: '\e900';
+  content: "\e900";
 }
 .icon-trekking:before {
-    content: '\e901';
+  content: "\e901";
 }
 .icon-boarding-pass:before {
-    content: '\e902';
+  content: "\e902";
 }
 .icon-train:before {
-    content: '\e903';
+  content: "\e903";
 }
 .icon-binoculars:before {
-    content: '\e904';
+  content: "\e904";
 }
 .icon-swimming-pool:before {
-    content: '\e905';
+  content: "\e905";
 }
 .icon-sunset:before {
-    content: '\e906';
+  content: "\e906";
 }
 .icon-sunglasses:before {
-    content: '\e907';
+  content: "\e907";
 }
 .icon-suitcase:before {
-    content: '\e908';
+  content: "\e908";
 }
 .icon-goggle:before {
-    content: '\e909';
+  content: "\e909";
 }
 .icon-restaurant:before {
-    content: '\e90a';
+  content: "\e90a";
 }
 .icon-postcard:before {
-    content: '\e90b';
+  content: "\e90b";
 }
 .icon-adaptor:before {
-    content: '\e90c';
+  content: "\e90c";
 }
 .icon-photo:before {
-    content: '\e90d';
+  content: "\e90d";
 }
 .icon-passport:before {
-    content: '\e90e';
+  content: "\e90e";
 }
 .icon-navigation:before {
-    content: '\e90f';
+  content: "\e90f";
 }
 .icon-mountain:before {
-    content: '\e910';
+  content: "\e910";
 }
 .icon-map-1:before {
-    content: '\e911';
+  content: "\e911";
 }
 .icon-limousine:before {
-    content: '\e912';
+  content: "\e912";
 }
 .icon-landmark:before {
-    content: '\e913';
+  content: "\e913";
 }
 .icon-resort:before {
-    content: '\e914';
+  content: "\e914";
 }
 .icon-sign:before {
-    content: '\e915';
+  content: "\e915";
 }
 .icon-flip-flops:before {
-    content: '\e916';
+  content: "\e916";
 }
 .icon-map:before {
-    content: '\e917';
+  content: "\e917";
 }
 .icon-take-off:before {
-    content: '\e918';
+  content: "\e918";
 }
 .icon-boat:before {
-    content: '\e919';
+  content: "\e919";
 }
 .icon-compass:before {
-    content: '\e91a';
+  content: "\e91a";
 }
 .icon-cocktail-1:before {
-    content: '\e91b';
+  content: "\e91b";
 }
 .icon-cocktail:before {
-    content: '\e91c';
+  content: "\e91c";
 }
 .icon-credit-card:before {
-    content: '\e91d';
+  content: "\e91d";
 }
 .icon-camera:before {
-    content: '\e91e';
+  content: "\e91e";
 }
 .icon-calendar:before {
-    content: '\e91f';
+  content: "\e91f";
 }
 .icon-island:before {
-    content: '\e920';
+  content: "\e920";
 }
 .icon-beach:before {
-    content: '\e921';
+  content: "\e921";
 }
 .icon-around:before {
-    content: '\e922';
+  content: "\e922";
 }
 .icon-plane:before {
-    content: '\e923';
+  content: "\e923";
 }

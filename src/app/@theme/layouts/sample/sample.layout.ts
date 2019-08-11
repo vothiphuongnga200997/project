@@ -13,7 +13,7 @@ import {
 import { StateService } from '../../../@core/utils';
 // import { QuickStartService } from '../../../shared/services/quickstart.service';
 // import { ToastrService, ExecuteRobotService, InspectService } from '../../../shared/services';
-
+import {InspectService} from '../../../shared/services';
 import { DialogInterface } from '../../../shared/interface';
 // import { DialogComponent } from '../../../shared/modules/dialog/dialog.component';
 // TODO: move layouts into the framework

@@ -1,0 +1,34 @@
+<div class="row dashboard-container">
+    <div class="w-100">
+        <nb-card class>
+            <nb-tabset fullWidth>
+                <nb-tab tabTitle="Danh sách tour">
+                    <nb-card class="mb-0">
+                        <nb-card-body>
+                            <iframe class="iframe" [src]="generalSource"></iframe>
+                        </nb-card-body>
+                    </nb-card>
+                </nb-tab>
+                <nb-tab tabTitle="Chưa khởi hành">
+                    <nb-card>
+                        <nb-card-body>
+                            <ngx-tour-chua-di></ngx-tour-chua-di>
+                        </nb-card-body>
+                    </nb-card>
+                </nb-tab>
+                <nb-tab tabTitle="Đang khởi hành">
+                    <nb-card>
+                        <nb-card-body> </nb-card-body>
+                    </nb-card>
+                </nb-tab>
+                <nb-tab tabTitle="Đã kết thúc">
+                    <nb-card>
+                        <nb-card-body>
+                            <!-- <iframe class="iframe" [src]="statisticsSource"></iframe> -->
+                        </nb-card-body>
+                    </nb-card>
+                </nb-tab>
+            </nb-tabset>
+        </nb-card>
+    </div>
+</div>

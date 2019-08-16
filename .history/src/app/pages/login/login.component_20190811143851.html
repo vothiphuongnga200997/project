@@ -1,0 +1,86 @@
+<div class="container-fluid position-relative  container-login">
+    <div class="row h-100">
+        <div class="col-5">
+            <div class="row h-100">
+                <div class="col-5"></div>
+                <div class="col-7 gray-bar h-100">
+                    <div class="row">
+                        <div class="col-10 offset-1">
+                            <div>
+                                <img class="w-100 logo" src="../../../assets/images/spiderium_studio_logo.png" alt="studio_logo" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-7"></div>
+    </div>
+    <div class="position-absolute w-100 h-100 bg-img-layout">
+        <div class="d-flex align-items-center h-100">
+            <img src="../../../assets/images/login_background.png" alt="login_background" class="w-100" />
+        </div>
+    </div>
+    <div class="position-absolute w-100 h-100  form-io-layout p-0">
+        <div class="row h-100 form-login-body  medium small">
+            <div class="col-12 h-100 m-0">
+                <div class="row h-100  d-flex flex-column justify-content-end mr-0">
+                    <div class="div-login-form col-5 offset-2 ">
+                        <div class="w-100 login-form-layout fade-in">
+                            <input type="text" placeholder="username" [(ngModel)]="username" />
+                            <div class="requeset">{{ requestUser }}</div>
+                            <input type="password" placeholder="password" [(ngModel)]="password" />
+                            <div class="requeset">{{ requestPassword }}</div>
+                            <button class="login" (click)="onLoginSubmit()">Login</button>
+                            <!-- <div class="d-flex">
+                                <button class="mr-2">
+                                    <img class="spring-social" src="../../../assets/images/facebook.png" />Facebook
+                                </button>
+                                <button (click)="logInWithGoogle('google-login-button-sign-in')" id="google-login-button-sign-in">
+                                    <img class="spring-social" src="../../../assets/images/search.png" />
+                                    Google
+                                </button>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 p-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row h-100 form-login-body large">
+            <div class="col-6"></div>
+            <div class="col-6 h-100 m-0">
+                <div class="row h-100  d-flex flex-column justify-content-end mr-0">
+                    <div class="div-login-form col-6 offset-5">
+                        <div class="w-100 login-form-layout fade-in">
+                            <input type="text" placeholder="username" [(ngModel)]="username" />
+                            <div class="requeset">{{ requestUser }}</div>
+                            <input type="password" placeholder="password" [(ngModel)]="password" />
+                            <div class="requeset">{{ requestPassword }}</div>
+
+                            <button class="login" (click)="onLoginSubmit()">Login</button>
+                            <!-- <div class="d-flex">
+                                <button class="mr-2">
+                                    <img class="spring-social" src="../../../assets/images/facebook.png" />Facebook
+                                </button>
+                                <button (click)="logInWithGoogle('google-login-button-sign-in')" id="google-login-button-sign-in">
+                                    <img class="spring-social" src="../../../assets/images/search.png" />
+                                    Google
+                                </button>
+                            </div> -->
+                            <!-- <button class="btn btn-info" (click)="logInWithMicrosoft()">Login With
+                                Microsoft</button> -->
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-11 mr-0 pr-0">
+                            <ngx-footer></ngx-footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

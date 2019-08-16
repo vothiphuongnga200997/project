@@ -1,0 +1,42 @@
+<div class="header-container" [class.left]="position === 'normal'" [class.right]="position === 'inverse'">
+    <div class="logo-containter">
+        <a (click)="toggleSidebar()" href="#" class="navigation"><em class="nb-menu"></em></a>
+        <div class="logo" (click)="goToHome()">
+            SPIDERIUM STUDIO
+        </div>
+    </div>
+</div>
+
+<div class="header-container">
+    <nb-actions size="medium" [class.right]="position === 'normal'" [class.left]="position === 'inverse'">
+        <nb-action *nbIsGranted="['view', 'user']">
+            <nb-user [nbContextMenu]="userMenu" [name]="user?.name" [picture]="user?.picture"></nb-user>
+        </nb-action>
+    </nb-actions>
+    <!-- <nb-select outline status="info" *ngIf="loading" (selectedChange)="downloadFile($event)">
+        <nb-option *ngFor="let dataOption of downloadMenu" [value]="dataOption.value">{{ dataOption.title }}</nb-option>
+    </nb-select> -->
+    <div class="dropdown">
+        <button class="dropbtn">
+            <img src="../../../../assets/images/download-to-inbox.svg" style="width:25px ; height:25px " />
+        </button>
+
+        <div class="dropdown-content">
+            <div class="menu" *ngFor="let dataOption of downloadMenu" (click)="downloadFile(dataOption.value)">
+                <img [src]="dataOption.title" class="dropimg" />
+                <div class="version">{{ dataOption.version }}</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="drop-down" ngbDropdown>
+        <a href="javascript:void(0)" class="nav-link" ngbDropdownToggle
+            ><img class="nav-link-img" src="../../../../assets/images/download-to-inbox.svg"
+        /></a>
+        <div class="dropdown-menu-righ" ngbDropdownMenu>
+            <a class="dropdown-item" *ngFor="let dataOption of downloadMenu" (click)="downloadFile(dataOption.value)"
+                >{{ dataOption.title }}
+            </a>
+        </div>
+    </div> -->
+</div>

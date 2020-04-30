@@ -65,7 +65,7 @@
         "formiojs": "3.16.4",
         "intl": "1.2.5",
         "ionicons": "2.0.1",
-        "jquery": "3.4.1",
+        "jquery": "3.5.0",
         "kafka-proxy-rest": "1.0.7",
         "lodash": "4.17.11",
         "moment": "2.24.0",

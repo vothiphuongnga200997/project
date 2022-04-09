@@ -68,7 +68,7 @@
         "jquery": "3.4.1",
         "kafka-proxy-rest": "1.0.7",
         "lodash": "4.17.11",
-        "moment": "2.24.0",
+        "moment": "2.29.2",
         "monaco-editor": "0.17.0",
         "msal": "^1.0.0-preview.5",
         "nebular-icons": "1.1.0",
